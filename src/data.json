@@ -1,7 +1,7 @@
 [
   {
     "author": "Mark Webber",
-    "avatar": "avatar-mark-webber.webp",
+    "avatar": "/images/avatar-mark-webber.webp",
     "action": "reacted to your recent post",
     "post": "My first tournament today!",
     "picture": null,
@@ -12,7 +12,7 @@
   },
   {
     "author": "Angela Gray",
-    "avatar": "avatar-angela-gray.webp",
+    "avatar": "/images/avatar-angela-gray.webp",
     "action": "followed you",
     "post": null,
     "picture": null,
@@ -23,7 +23,7 @@
   },
   {
     "author": "Jacob Thompson",
-    "avatar": "avatar-jacob-thompson.webp",
+    "avatar": "/images/avatar-jacob-thompson.webp",
     "action": "has joined your group",
     "post": null,
     "picture": null,
@@ -34,7 +34,7 @@
   },
   {
     "author": "Rizky Hasanuddin",
-    "avatar": "avatar-rizky-hasanuddin.webp",
+    "avatar": "/images/avatar-rizky-hasanuddin.webp",
     "action": "sent you a private message",
     "post": null,
     "picture": null,
@@ -45,7 +45,7 @@
   },
   {
     "author": "Kimberly Smith",
-    "avatar": "avatar-rizky-hasanuddin.webp",
+    "avatar": "/images/avatar-rizky-hasanuddin.webp",
     "action": "commented on your picture",
     "post": null,
     "picture": "image-chess.webp",
@@ -56,7 +56,7 @@
   },
   {
     "author": "Nathan Peterson",
-    "avatar": "avatar-nathan-peterson.webp",
+    "avatar": "/images/avatar-nathan-peterson.webp",
     "action": "reacted to your recent post",
     "post": null,
     "picture": null,
@@ -67,7 +67,7 @@
   },
   {
     "author": "Anna Kim",
-    "avatar": "avatar-anna-kim.webp",
+    "avatar": "/images/avatar-anna-kim.webp",
     "action": "left the group",
     "post": null,
     "picture": null,
