@@ -1,0 +1,79 @@
+[
+  {
+    "author": "Mark Webber",
+    "avatar": "avatar-mark-webber.webp",
+    "action": "reacted to your recent post",
+    "post": "My first tournament today!",
+    "picture": null,
+    "isActive": true,
+    "group": null,
+    "date": "1m ago",
+    "message": null
+  },
+  {
+    "author": "Angela Gray",
+    "avatar": "avatar-angela-gray.webp",
+    "action": "followed you",
+    "post": null,
+    "picture": null,
+    "isActive": true,
+    "group": null,
+    "date": "5m ago",
+    "message": null
+  },
+  {
+    "author": "Jacob Thompson",
+    "avatar": "avatar-jacob-thompson.webp",
+    "action": "has joined your group",
+    "post": null,
+    "picture": null,
+    "isActive": true,
+    "group": "Chess Club",
+    "date": "1 day ago",
+    "message": null
+  },
+  {
+    "author": "Rizky Hasanuddin",
+    "avatar": "avatar-rizky-hasanuddin.webp",
+    "action": "sent you a private message",
+    "post": null,
+    "picture": null,
+    "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    "isActive": false,
+    "group": null,
+    "date": "5 days ago"
+  },
+  {
+    "author": "Kimberly Smith",
+    "avatar": "avatar-rizky-hasanuddin.webp",
+    "action": "commented on your picture",
+    "post": null,
+    "picture": "image-chess.webp",
+    "isActive": false,
+    "group": null,
+    "date": "1 week ago",
+    "message": null
+  },
+  {
+    "author": "Nathan Peterson",
+    "avatar": "avatar-nathan-peterson.webp",
+    "action": "reacted to your recent post",
+    "post": null,
+    "picture": null,
+    "isActive": false,
+    "group": null,
+    "date": "2 weeks ago",
+    "message": null
+  },
+  {
+    "author": "Anna Kim",
+    "avatar": "avatar-anna-kim.webp",
+    "action": "left the group",
+    "post": null,
+    "picture": null,
+    "isActive": false,
+    "group": "Chess Club",
+    "date": "2 weeks ago",
+    "message": null
+  }
+]
