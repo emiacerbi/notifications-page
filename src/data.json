@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "author": "Mark Webber",
     "avatar": "/images/avatar-mark-webber.webp",
     "action": "reacted to your recent post",
@@ -11,6 +12,7 @@
     "message": null
   },
   {
+    "id": 2,
     "author": "Angela Gray",
     "avatar": "/images/avatar-angela-gray.webp",
     "action": "followed you",
@@ -22,6 +24,7 @@
     "message": null
   },
   {
+    "id": 3,
     "author": "Jacob Thompson",
     "avatar": "/images/avatar-jacob-thompson.webp",
     "action": "has joined your group",
@@ -33,6 +36,7 @@
     "message": null
   },
   {
+    "id": 4,
     "author": "Rizky Hasanuddin",
     "avatar": "/images/avatar-rizky-hasanuddin.webp",
     "action": "sent you a private message",
@@ -44,6 +48,7 @@
     "date": "5 days ago"
   },
   {
+    "id": 5,
     "author": "Kimberly Smith",
     "avatar": "/images/avatar-kimberly-smith.webp",
     "action": "commented on your picture",
@@ -55,6 +60,7 @@
     "message": null
   },
   {
+    "id": 6,
     "author": "Nathan Peterson",
     "avatar": "/images/avatar-nathan-peterson.webp",
     "action": "reacted to your recent post",
@@ -66,6 +72,7 @@
     "message": null
   },
   {
+    "id": 7,
     "author": "Anna Kim",
     "avatar": "/images/avatar-anna-kim.webp",
     "action": "left the group",

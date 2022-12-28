@@ -1,4 +1,5 @@
 export type Notification = {
+  id: number
   author: string
   avatar: string
   action: string

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import data from './data.json'
 import { Notification } from './types'
+import { getRemainingNotifications } from './helpers/getRemainingNotifications'
 
 function App() {
   const [notifications, setNotifications] = useState<Notification[]>([])
@@ -9,28 +10,66 @@ function App() {
     setNotifications(data)
   }, [])
 
+  const setNotificationStatus = (id: number) => {
+    setNotifications(
+      notifications.map((notification: Notification) =>
+        notification.id === id
+          ? { ...notification, isActive: !notification.isActive }
+          : notification
+      )
+    )
+  }
+
+  const markAllAsRead = () => {
+    setNotifications(
+      notifications.map((notification: Notification) => {
+        return {
+          ...notification,
+          isActive: false,
+        }
+      })
+    )
+  }
+
+  const remainingNotifications = getRemainingNotifications(notifications)
+
   return (
-    <div className="font-primary min-h-screen">
-      <div className="mx-auto max-w-2xl p-5">
-        <header className="flex items-center justify-between">
-          <h1>Notifications</h1>
-          {/* {notifications} */}
-          <p>Mark all as read</p>
+    <div className="font-primary bg-neutral-50 min-h-screen grid place-content-center">
+      <div className="max-w-2xl p-5 md:p-6 bg-white rounded-lg shadow-lg">
+        <header className="flex items-center gap-3">
+          <h1 className="text-xl font-bold">Notifications</h1>
+          <p className="py-1 px-3 rounded-md bg-primary-800 text-white">
+            {remainingNotifications}
+          </p>
+          <p
+            className="text-neutral-600 hover:text-primary-800 cursor-pointer ml-auto"
+            onClick={markAllAsRead}
+          >
+            Mark all as read
+          </p>
         </header>
 
-        <main className="bg-neutral-50 flex flex-col gap-3">
+        <main className="flex flex-col gap-3 mt-8">
           {notifications.map((notification) => (
-            <div key={notification.author} className="flex items-start gap-3">
+            <article
+              key={notification.id}
+              className={`flex items-start gap-3 p-3 cursor-pointer rounded-lg ${
+                notification.isActive && 'bg-neutral-100'
+              }`}
+              onClick={() => setNotificationStatus(notification.id)}
+            >
               <img
                 src={notification.avatar}
                 className="w-10 h-10 rounded-full"
                 alt={notification.author}
               />
               <div>
-                <h3 className="inline font-black">{notification.author} </h3>
+                <h3 className="inline font-black hover:text-primary-800">
+                  {notification.author}{' '}
+                </h3>
                 <span className="text-neutral-600">{notification.action} </span>
 
-                <span className="text-neutral-600 font-extrabold">
+                <span className="text-neutral-600 font-extrabold hover:text-primary-800">
                   {' '}
                   {notification.post}
                 </span>
@@ -45,7 +84,7 @@ function App() {
                 <p className="text-neutral-400">{notification.date}</p>
 
                 {notification.message && (
-                  <p className="border p-3 rounded-md leading-tight text-neutral-600">
+                  <p className="border p-3 mt-3 rounded-md leading-tight text-neutral-600">
                     {notification.message}
                   </p>
                 )}
@@ -53,11 +92,11 @@ function App() {
               {notification.picture && (
                 <img
                   src={notification.picture}
-                  className="w-10 h-10 rounded-md"
+                  className="w-10 h-10 rounded-md ml-auto"
                   alt={notification.author}
                 />
               )}
-            </div>
+            </article>
           ))}
         </main>
       </div>
