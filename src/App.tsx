@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="font-primary bg-neutral-50 min-h-screen grid place-content-center">
-      <div className="max-w-2xl p-5 md:p-6 bg-white rounded-lg shadow-lg">
+      <div className="max-w-container p-5 md:p-6 bg-white rounded-lg shadow-lg">
         <header className="flex items-center gap-3">
           <h1 className="text-xl font-bold">Notifications</h1>
           <p className="py-1 px-3 rounded-md bg-primary-800 text-white">
@@ -60,7 +60,7 @@ function App() {
             >
               <img
                 src={notification.avatar}
-                className="w-10 h-10 rounded-full"
+                className="w-14 h-14 rounded-full"
                 alt={notification.author}
               />
               <div>

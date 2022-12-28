@@ -16,6 +16,9 @@ module.exports = {
         'neutral-600': 'hsl(219, 12%, 42%)',
         'neutral-900': 'hsl(224, 21%, 14%)',
       },
+      maxWidth: {
+        container: '730px',
+      },
     },
   },
   plugins: [],
