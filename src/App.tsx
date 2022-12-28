@@ -84,7 +84,7 @@ function App() {
                 <p className="text-neutral-400">{notification.date}</p>
 
                 {notification.message && (
-                  <p className="border p-3 mt-3 rounded-md leading-tight text-neutral-600">
+                  <p className="border p-3 mt-3 rounded-md leading-tight hover:bg-neutral-100 text-neutral-600">
                     {notification.message}
                   </p>
                 )}
